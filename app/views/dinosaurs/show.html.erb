@@ -3,4 +3,8 @@
 <%= image_tag @dinosaur.image_url %>
 <br><hr>
 <%= link_to "[Edit]", edit_dinosaur_path(@dinosaur.id) %>
-<%= link_to "[Delete]", dinosaur_path(@dinosaur.id), method: :delete, data: { confirm: "Are you sure?" } %>
+<%= link_to "[Delete]",
+  dinosaur_path(@dinosaur.id),
+  method: :delete,
+  data: { confirm: "Are you sure?" }
+%>

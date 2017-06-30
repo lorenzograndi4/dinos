@@ -36,7 +36,7 @@ class DinosaursController < ApplicationController
 
   def destroy
     @dinosaur = Dinosaur.find(params[:id])
-    @dinosaur.destroy
+    @dinosaur.destroy # this goes to the model! WHAT
     redirect_to root_path
   end
 
