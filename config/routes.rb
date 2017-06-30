@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   get "dinosaurs" => "dinosaurs#index"
 
+  root "dinosaurs#index"
+
+  get "dinosaurs/:id" => "dinosaurs#show", as: :dinosaur
+
 end
